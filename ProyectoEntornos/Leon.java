@@ -55,6 +55,11 @@ public class Leon extends Animal implements Depredador {
 	public void respirar() {
 		super.respirar();
 	}
+
+	public void exito() {
+		System.out.println(cazar.toString() +  "\nAtaque existoso a la presa.")
+	}
+
 	
 	
 	
