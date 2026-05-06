@@ -26,13 +26,14 @@ public class Leon extends Animal implements Depredador {
 	 * IMPLEMENTACION DEL MÉTODO CAZAR DE LA INTERFAZ DEPREDADOR
 	 */
 	@Override
-	public void cazar(int energia) {
-		if (energia <= 0) {
-			System.out.println("No puede cazar sin energia.");
-			return; 
-		} else {
-			System.out.println("Caza ejecutada correctamente.");
-		}
+	public void cazar() {
+		
+	public String cazar(int energia) {
+    if (energia <= 3) {
+    System.out.println("No hay energia suficiente"); 
+    }
+		String energiaEstado = energia + "El león caza hienas porque son cabronas. ";
+		return  energiaEstado; 
 	}
 
 	/**
@@ -59,6 +60,11 @@ public class Leon extends Animal implements Depredador {
 	public void respirar() {
 		super.respirar();
 	}
+
+	public void exito() {
+		System.out.println(cazar.toString() +  "\nAtaque existoso a la presa."); 
+	}
+
 	
 	
 	
