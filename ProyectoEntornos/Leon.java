@@ -27,8 +27,13 @@ public class Leon extends Animal implements Depredador {
 	 */
 	@Override
 	public void cazar() {
-		System.out.println("El leon detecta una presa.");
-		System.out.println("El león se prepara para el ataque.. ");
+		
+	public String cazar(int energia) {
+    if (energia <= 3) {
+    System.out.println("No hay energia suficiente"); 
+    }
+		String energiaEstado = energia + "El león caza hienas porque son cabronas. ";
+		return  energiaEstado; 
 	}
 
 	/**
