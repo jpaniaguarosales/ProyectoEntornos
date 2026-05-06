@@ -28,6 +28,7 @@ public class Leon extends Animal implements Depredador {
 	@Override
 	public void cazar() {
 		System.out.println("El leon detecta una presa.");
+		System.out.println("El león se prepara para el ataque.. ");
 	}
 
 	/**
