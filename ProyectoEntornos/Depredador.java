@@ -11,7 +11,9 @@ package te;
 public interface Depredador {
 	
 	// METODO QUE SIMYULA EL COMPORTAMIENTO DE CAZA
-	public void cazar(); 
+	default void cazar() {
+		System.out.println("El depredador detecta la presa."); 
+	}
 	
 	/**
 	 * METODO observar() 
