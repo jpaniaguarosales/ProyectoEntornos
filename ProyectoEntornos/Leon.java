@@ -26,7 +26,7 @@ public class Leon extends Animal implements Depredador {
 	 * IMPLEMENTACION DEL MÉTODO CAZAR DE LA INTERFAZ DEPREDADOR
 	 */
 	@Override
-	public void cazar() {
+	public void cazar(int energia) {
 		System.out.println("El león caza hienas porque son cabronas. ");
 	}
 
