@@ -30,6 +30,8 @@ public class Leon extends Animal implements Depredador {
 		if (energia <= 0) {
 			System.out.println("No puede cazar sin energia.");
 			return; 
+		} else {
+			System.out.println("Caza ejecutada correctamente.");
 		}
 	}
 
